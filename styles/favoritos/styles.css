@@ -137,12 +137,22 @@ nav div {
 }
 
 .crear-gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 54px;
   width: 54px;
   border-radius: 50%;
   border: 1px solid #572EE5;
   color: #572EE5;
   font-size: 28px;
+  font-weight: 700;
 }
 
 .crear-gif:hover {
@@ -156,13 +166,22 @@ nav div {
 }
 
 .crear-gif-noc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 54px;
   width: 54px;
   border-radius: 50%;
   border: 1px solid white;
   color: white;
-  background-color: inherit;
   font-size: 28px;
+  font-weight: 700;
 }
 
 .crear-gif-noc:hover {

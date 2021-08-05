@@ -54,12 +54,16 @@ nav {
 }
 
 .crear-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 54px;
     width: 54px;
     border-radius: 50%;
     border: 1px solid #572EE5;
     color: #572EE5;
     font-size: 28px;
+    font-weight: 700;
 }
 
 .crear-gif:hover {
@@ -73,6 +77,9 @@ nav {
 }
 
 .crear-gif-noc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 54px;
     width: 54px;
     border-radius: 50%;
@@ -80,6 +87,7 @@ nav {
     color: white;
     background-color: inherit;
     font-size: 28px;
+    font-weight: 700;
 }
 
 .crear-gif-noc:hover {
