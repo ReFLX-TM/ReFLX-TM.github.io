@@ -1,0 +1,43 @@
+header {
+    padding-top: 76px;
+
+    span {
+        color: #5ED7C6;
+    }
+}
+
+.header {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 25%;
+}
+
+.header-noc {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 25%;
+}
+
+@media (max-width: 768px){
+    .header {
+        margin-top: 30px;
+        font-size: 25px;
+        padding: 0 12.5%;
+        line-height: 33px;
+    }
+
+    .header-noc {
+        margin-top: 30px;
+        font-size: 25px;
+        padding: 0 12.5%;
+        line-height: 33px;
+    }
+}

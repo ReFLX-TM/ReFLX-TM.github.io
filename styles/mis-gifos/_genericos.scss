@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav, header, main, footer {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.inactivo {
+    display: none;
+}
+
+.nocturno {
+    color: white;
+    background-color: #37383C;
+    border: none;
+}

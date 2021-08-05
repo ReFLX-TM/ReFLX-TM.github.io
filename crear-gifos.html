@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/crear-gifos/styles.css">
+
+    <title>Gifos</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" id="logo"><img src="./images/logo-desktop.svg" class="logo" alt="Logo"></a>
+        <div>
+            <ul class="menu-nav">
+                <li class="nav-li" id="nav-button"><button id="nocturno">MODO NOCTURNO</button></li>
+                <li class="nav-li" id="nav-button"><a href="./favoritos.html">FAVORITOS</a></li>
+                <li class="nav-li" id="nav-button"><a href="./mis-gifos.html">MIS GIFOS</a></li>
+            </ul>
+            <button class="crear-gif" id="crear-gif"><a href="./crear-gifos.html">+</a></button>
+        </div>
+    </nav>
+    <main>
+        <div class="crear-gif-container">
+            <div class="camara-img" id="cam-img">        
+                <img src="./images/camara.svg">
+                <div class="luz"></div>
+            </div>
+            <div class="creador">
+                <div class="borde" id="borde">
+                    <div class="marco">
+                        <h1 id="titulo">Aquí podrás<br/>crear tus propios <span>GIFOS</span></h1>
+                        <p id="info">¡Crea tu GIFO en sólo 3 pasos!<br/>(sólo necesitas una cámara para grabar un video)</p>
+                        <video class="inactivo" id="reproductor"></video>
+                        <div class="inactivo" id="fondo">
+                            <div class="info-gif" id="info-gif">
+                                <img class="fondo-img" src="./images/loader.svg" alt="cargando">
+                                <p>Estamos subiendo tu GIFO</p>
+                            </div>
+                            <div class="inactivo" id="botones-fondo">
+                                <button class="boton-tarjeta" id="descargar"><i class="fas fa-download"></i></button>
+                                <button class="boton-tarjeta"><i class="fas fa-link"></i></button>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="pasos">
+                    <div id="1" class="paso">1</div>
+                    <div id="2" class="paso">2</div>
+                    <div id="3" class="paso">3</div>
+                </div>
+                <div class="misc">
+                    <div class="inactivo" id="contador">00:00:00</div>
+                    <button class="inactivo" id="repetir">REPETIR CAPTURA</button>
+                </div>
+                <div class="linea" id="linea"></div>
+                <button class="control" id="comenzar">COMENZAR</button>
+                <button class="inactivo" id="grabar">GRABAR</button>
+                <button class="inactivo" id="finalizar">FINALIZAR</button>
+                <button class="inactivo" id="subir-gif">SUBIR GIFO</button>
+            </div>
+            <img class="pelicula" src="./images/pelicula.svg" id="pelicula">
+        </div>
+    </main>
+    <footer>
+        <div class="redes">
+            <p>Compartir en:</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <p>© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/720556c3f5.js" crossorigin="anonymous"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script type="module" src="./scripts/crear-gifos/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+.expandir {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.expandir-noc {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #37383C;
+}
+
+.max-cerrar {
+    position: relative;
+    bottom: 10%;
+    left: 35%;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    background-color: inherit;
+    justify-content: center;
+    font-size: 15px;
+    color: #572EE5;
+    border: none;
+}
+
+.max-galeria {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#gif-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+    width: 550px;
+
+    img {
+        margin-bottom: 30px;
+        align-self: center;
+    }
+}
+
+.max-info {
+    font-family: "Roboto", sans-serif;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    h4 {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+
+.max-buttons {
+    position: relative;
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    bottom: 35px;
+    left: 535px;
+
+    button {
+        border: none;  
+        background-color: inherit;
+        font-size: 20px;
+        color: #572EE5;
+    }
+}
+
+@media (max-width: 768px){
+    .max-cerrar {
+        bottom: 10%;
+        left: 35%;
+    }
+    
+    .max-galeria {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #gif-max {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 450px;
+        width: 100%;
+    
+        img {
+            height: 245px;
+            width: 318px;
+            margin-bottom: 30px;
+            align-self: center;
+        }
+    }
+    
+    .max-info {
+        padding-left: 35px;
+        font-family: "Roboto", sans-serif;
+    
+        h3 {
+            font-size: 15px;
+        }
+    
+        h4 {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    }
+    
+    .max-buttons {
+        width: 12%;
+        left: 345px;
+    }
+}

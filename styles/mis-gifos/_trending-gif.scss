@@ -1,0 +1,224 @@
+.trending-gif {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: #572EE5;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 12px;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.trending-gif-noc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+    background-color: #222326;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 12px;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.galeria {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#galeria-gif {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    overflow: hidden;
+
+    .tarjeta {
+        margin: 0 25px;
+    }
+}
+
+.move {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #572EE5;
+    color: #572EE5;
+    font-size: 24px;
+    align-self: center;
+}
+
+.move:hover {
+    background-color: #572EE5;
+    color: white;
+}
+
+.move-noc {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+    font-size: 24px;
+    align-self: center;
+}
+
+.move-noc:hover {
+    background-color: white;
+    color: black;
+}
+
+.tarjeta {
+
+    h4 {
+        font-weight: 400;
+    }
+
+    h3 {
+        font-weight: 500;
+    }
+}
+
+.trending {
+    height: 275px;
+    width: 360px;
+}
+
+.gif {
+    height: 100%;
+    width: 100%;
+}
+
+.fondo-tarjeta {
+    position: relative;
+    bottom: 279px;
+    height: 100%;
+    width: 100%;
+    background-color: #572EE5;
+    opacity: 0;
+}
+
+.contenedor-botones {
+    position: relative;
+    top: 5%;
+    left: 62.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32.5%;
+    opacity: 0;
+}
+
+.boton-tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border: none;
+    color: #572EE5;
+    border-radius: 5px;
+}
+
+.info-tarjeta {
+    position: relative;
+    top: 55%;
+    left: 5%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 325px;
+    opacity: 0;
+}
+
+@media (min-width: 769px){
+    .tarjeta:hover .fondo-tarjeta{
+        opacity: 0.6;
+    }
+    
+    .tarjeta:hover .contenedor-botones, .tarjeta:hover .info-tarjeta {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px){
+    .trending-gif {
+        height: 550px;
+    
+        h2 {
+            font-size: 25px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .trending-gif-noc {
+        height: 550px;
+    
+        h2 {
+            font-size: 25px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .galeria {
+        margin-top: 35px;
+    }
+    
+    #galeria-gif {
+        width: 92%;
+        overflow-x: scroll;
+    
+        .tarjeta {
+            margin: 0 25px;
+        }
+    }
+    
+    .move {
+        display: none;
+    }
+    
+    .move-noc {
+        display: none;
+    }
+    
+    .trending {
+        height: 187px;
+        width: 243px;
+    }
+}

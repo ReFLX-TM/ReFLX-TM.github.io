@@ -1,0 +1,125 @@
+.favoritos{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo {
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #572EE5;
+    font-weight: 800;
+}
+
+.titulo-noc {
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 800;
+}
+
+.img-fav {
+    width: 28px;
+    height: 21px;
+    align-self: center;
+}
+
+.sin-resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+
+    p {
+        width: 35%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        color: #50E3C2;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.grid-creados {
+    align-self: center;
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 30px;
+}
+
+.gif-favoritos {
+    height: 200px;
+    width: 260px;
+
+    .fondo-tarjeta {
+        bottom: 205px;
+
+    }
+
+    .contenedor-botones {
+        width: 40%;
+        left: 55%;
+    }
+
+    .info-tarjeta {
+        width: 245px;
+        top: 45%;
+    }
+}
+
+#ver-mas {
+    align-self: center;
+    margin-top: 80px;
+    width: 127px;
+    height: 50px;
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    color: #572EE5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#ver-mas:hover {
+    background-color: #572EE5;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .titulo {
+        font-size: 20px;
+    }
+    
+    .titulo-noc {
+        font-size: 20px;
+    }
+    
+    .sin-resultados {
+        height: 400px;
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    
+    .grid-creados {
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: repeat(6, 120px);
+
+        .info-tarjeta {
+            width: 0px;
+        }
+    }
+    
+    .gif-favoritos {
+        height: 120px;
+        width: 156px;
+    }
+}

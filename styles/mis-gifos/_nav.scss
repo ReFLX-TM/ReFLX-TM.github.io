@@ -1,0 +1,212 @@
+nav {
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    padding: 0 50px;
+    border-top: 5px solid #572EE5;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 42%;
+    }
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.boton-hamburguesa {
+    display: none;
+}
+
+.boton-hamburguesa-noc {
+    display: none;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    list-style-type: none;
+}
+
+.menu-nav-noc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    list-style-type: none;
+}
+
+.nav-li {
+    color: #572EE5;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-li-noc {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nocturno {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    background-color: inherit;
+    border: none;
+}
+
+.crear-gif {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: 1px solid #572EE5;
+    color: #572EE5;
+    font-size: 28px;
+}
+
+.crear-gif:hover {
+    background-color: #572EE5;
+    color: white;
+}
+
+.crear-gif:active {
+    background-color: #ae9fe7;
+    border: #ae9fe7
+}
+
+.crear-gif-noc {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+    font-size: 28px;
+}
+
+.crear-gif-noc:hover {
+    background-color: white;
+    color: #37383C;
+}
+
+.crear-gif-noc:active {
+    background-color: #ae9fe7;
+    border: #ae9fe7
+}
+
+@media (max-width: 768px){
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 90px;
+        padding: 0 50px;
+        border-top: 5px solid #572EE5;
+        align-items: center;
+    
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 42%;
+        }
+    }
+    
+    .logo {
+        height: 48px;
+        width: auto;
+        justify-self: flex-start;
+    }
+
+    .boton-hamburguesa {
+        display: inline-block;
+        border: none;
+        width: 14px;
+        height: 14px;
+        background-color: inherit;
+        font-size: 14px;
+        color: #572EE5;
+    }
+
+    .boton-hamburguesa-noc {
+        display: inline-block;
+        border: none;
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        background-color: inherit;
+        color: white;
+    }
+    
+    .menu-container{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 18px;
+        width: 100%;
+        height: 100%;
+        background-color: #572EE5;
+        opacity: 0.9;
+    }
+
+    .menu-nav-noc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 18px;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.9;
+    }
+    
+    .nav-li {
+        color: white;
+        font-size: 15px;
+        height: 60px;
+    }
+    
+    .nav-li-noc {
+        color: white;
+        font-size: 15px;
+        height: 60px;
+    }
+    
+    .crear-gif {
+        display: none;
+    }
+    
+    .crear-gif-noc {
+        display: none;
+    }
+}
