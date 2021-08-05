@@ -220,5 +220,24 @@
     .trending {
         height: 187px;
         width: 243px;
+
+        img{
+            height: inherit;
+            width: inherit;
+        }
+    }
+
+    .fondo-tarjeta {
+        height: 1px;
+        width: 1px;
+    }
+    
+    .boton-tarjeta {
+        height: 1px;
+        width: 1px;
+    }
+    
+    .info-tarjeta {
+        width: 1px;
     }
 }

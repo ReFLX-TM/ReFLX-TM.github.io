@@ -184,7 +184,7 @@ function crearMisGif(gifArray, suma){
         for (let counter = 0; counter < limite; counter++){
             misGif.innerHTML += `
             <div class="tarjeta gif-favoritos" id="${counter}">
-                <img src="${gifArray[counter].images.fixed_height.url}" class="gif" alt="gif">
+                <img src="${gifArray[counter].images.fixed_height.url}" class="gif" name="${counter}" alt="gif">
                 <div class="fondo-tarjeta">
                     <div class="contenedor-botones">
                         <button class="boton-tarjeta" name="${counter}" id="borrar-mis"><i class="far fa-trash-alt"></i></button>
@@ -201,11 +201,11 @@ function crearMisGif(gifArray, suma){
         
     }
 
-    const gifs = document.querySelectorAll(".gif-favoritos");
+    const gifs = document.querySelectorAll(".gif-favoritos img");
 
     for (let gif of gifs){
         gif.addEventListener("click", (e) => {
-            maximizar(gif.attributes.id.value, gifArray);
+            maximizar(gif.attributes.name.value, gifArray);
         })
     }
 
@@ -242,7 +242,7 @@ function crearTrendingGif(gifArray){
         for (let counter = 0; counter < 10; counter++){
             trendingGif.innerHTML += `
             <div class="tarjeta trending" id="${counter}">
-                <img src="${gifArray[counter].images.fixed_height.url}" class="gif" alt="gif">
+                <img src="${gifArray[counter].images.fixed_height.url}" class="gif" name="${counter}" alt="gif">
                 <div class="fondo-tarjeta">
                     <div class="contenedor-botones">
                         <button class="boton-tarjeta" name="${counter}" id="favoritos-trending"><i class="far fa-heart"></i></button>
@@ -258,11 +258,11 @@ function crearTrendingGif(gifArray){
         }
     }
 
-    const gifs = document.querySelectorAll(".trending");
+    const gifs = document.querySelectorAll(".trending img");
 
     for (let gif of gifs){
         gif.addEventListener("click", (e) => {
-            maximizar(gif.attributes.id.value, gifArray);
+            maximizar(gif.attributes.name.value, gifArray);
         })
     }
 
