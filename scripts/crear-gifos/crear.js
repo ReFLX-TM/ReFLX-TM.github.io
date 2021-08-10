@@ -93,6 +93,15 @@ async function descarga(url){
     a.click();
 }
 
+function copiarAlPortapapeles(url) {
+    const aux = document.createElement("input");
+    aux.setAttribute("value", url);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+    document.body.removeChild(aux);
+  }
+
 
 const comenzar = document.getElementById("comenzar");
 const grabar = document.getElementById("grabar");
@@ -107,6 +116,7 @@ const fondo = document.getElementById("fondo");
 const infoGif = document.getElementById("info-gif");
 const botones = document.getElementById("botones-fondo");
 const descargar = document.getElementById("descargar");
+const enlace = document.getElementById("copiar-enlace");
 const uno = document.getElementById("1");
 const dos = document.getElementById("2");
 const tres = document.getElementById("3");
@@ -226,3 +236,13 @@ descargar.addEventListener("click", async (e) => {
     const buscarJson = await buscarResponse.json();
     descarga(buscarJson.data.images.original.url)
 });
+
+enlace.addEventListener("click", async () => {
+    const buscarResponse = await fetch(`https://api.giphy.com/v1/gifs/${gifId}?api_key=EhKz1YoCvGNKu8jysQQw0rBVAlYgagwK`);
+    const buscarJson = await buscarResponse.json();
+    copiarAlPortapapeles(buscarJson.data.images.original.url);
+    infoGif.innerHTML = `
+    <img class="fondo-img" src="./images/check.svg" alt="cargando">
+    <p>¡Enlace Copiado!</p>
+    `;
+})
