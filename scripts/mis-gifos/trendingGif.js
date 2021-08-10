@@ -4,8 +4,13 @@ const trendingResponse = await fetch("https://api.giphy.com/v1/gifs/trending?api
 const trendingJson = await trendingResponse.json();
 const gifArray = trendingJson.data;
 
-crear.crearTrendingGif(gifArray);
+if (gifArray != []){
+    crear.crearTrendingGif(gifArray);
+}
 
+else {
+    console.log("Parece que no hay Trendings en este momento")
+}
 const botonIzquierda = document.getElementById("boton-galeria-atras");
 const botonDerecha = document.getElementById("boton-galeria-adelante");
 
